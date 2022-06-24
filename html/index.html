@@ -7,23 +7,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <style>
-            body { background: #fff; padding: 100px 0; }
+            body { background: #fff; padding: 30px 0; }
             h1   { font-size: 25px; color: #002A8F; }
             h2   { font-size: 15px; color: #fff; }
             h3   { font-size: 15px; color: #002A8F; font-weight: bold; margin-bottom: 30px;}
-            span { font-weight: bold; margin: 10px; font-size: 14px;}
-            #divSecao { background: #002A8F; padding: 10px; border-radius: 5px; margin: 30px 0;}
+            span { margin: 10px; font-size: 14px;} 
+            #divSecao { background: #002A8F; padding: 10px; border-radius: 3px; margin: 30px 0;}
             #tabela { margin-bottom:40px;}
-
-
         </style>
     </head>
-    <body>
+    <body id="divprint">
         <div class="container">
             <div class="row text-center" id="HEADER">
-                <div class="col-sm-4 p-3 text-dark">xxx</div>
+                <div class="col-sm-4 p-3 text-dark"><img src="./images/irmen.png" style="width:200px;" class="img-fluid" /></div>
                 <div class="col-sm-4 p-3 text-dark"><h1>Relatório de Despesas de Viagem</h1></div>
-                <div class="col-sm-4 p-3 text-dark">xxx</div>
+                <div class="col-sm-4 p-3 text-dark"><img src="./images/centro-oeste.jpg" style="width:200px;" class="img-fluid" /></div>
             </div>
             <!-- Seçao 1 | ADIANTAMENTO -->
             <div class="row text-center text-white" id="divSecao">
@@ -34,17 +32,17 @@
                 <table class="table-responsive-sm table-hover" id="tabela">
                     <tbody>
                       <tr>
-                        <td><span class="idNome">Nome:</span><span id="Nome">John woocommerce</span></td>
-                        <td><span class="idTransporte">Transporte:</span><span id="Transporte">Voo - 4455</span></td>
+                        <td><span class="idNome">Nome</span><span id="Nome">John woocommerce</span></td>
+                        <td><span class="idTransporte">Transporte</span><span id="Transporte">Voo - 4455</span></td>
                       </tr>
                       <tr>
-                        <td><span class="Partida">Partida:</span><span id="Partida">20/02/2022</span></td>
-                        <td><span class="Retorno">Retorno:</span><span id="Retorno">20/02/2022</span></td>
-                        <td><span class="Duracao">Duração da viagem:</span><span id="Duracao">20/02/2022</span></td>
+                        <td><span class="Partida">Partida</span><span id="Partida">20/02/2022</span></td>
+                        <td><span class="Retorno">Retorno</span><span id="Retorno">20/02/2022</span></td>
+                        <td><span class="Duracao">Duração da viagem</span><span id="Duracao">20/02/2022</span></td>
                       </tr>
                       <tr>
-                        <td><span class="DistanciaGoogle">Distância Google:</span><span id="DistanciaGoogle">20/02/2022</span></td>
-                        <td><span class="MotivoViagem">Motivo da Viagem:</span><span id="MotivoViagem">20/02/2022</span></td>
+                        <td><span class="DistanciaGoogle">Distância Google</span><span id="DistanciaGoogle">20/02/2022</span></td>
+                        <td><span class="MotivoViagem">Motivo da Viagem</span><span id="MotivoViagem">20/02/2022</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -59,8 +57,8 @@
                 <table class="table table-hover" id="tabela">
                   <thead>
                     <tr>
-                      <th><span class="Acompanhante">Nome:</span></th>
-                      <th><span class="Empresa">Empresa:</span></th>
+                      <th><span class="Acompanhante">Nome</span></th>
+                      <th><span class="Empresa">Empresa</span></th>
                     </tr>
                   </thead>
                     <tbody>
@@ -81,16 +79,16 @@
                 <table class="table table-hover" id="tabela">
                   <thead>
                     <tr>
-                      <th><span class="VisitaData">Data:</span></span></th>
-                      <th><span class="VisitaEstado">Estado:</span></span></th>
-                      <th><span class="VisitaCidade">Cidade:</span></span></th>
-                      <th><span class="VisitaCliente">Cliente:</span></span></th>
+                      <th><span class="VisitaData">Data</span></th>
+                      <th><span class="VisitaEstado">Estado</span></th>
+                      <th><span class="VisitaCidade">Cidade</span></th>
+                      <th><span class="VisitaCliente">Cliente</span></th>
                     </tr>
                   </thead>
                     <tbody>
                       <tr>
-                        <td><span id="VisitaData">20/02/2022</span></span></td>
-                        <td><span id="VisitaEstado">Minas Gerais</span></td>
+                        <td><span id="VisitaData">20/02/2022</span></td>
+                        <td><span id="VisitaEstado">Minas Gerais</span</td>
                         <td><span id="VisitaCidade">Belo Horizonte</span></td>
                         <td><span id="VisitaCliente">Carla Perez</span></td>
                       </tr>
@@ -107,22 +105,22 @@
                 <table class="table table-hover" id="tabela">
                   <thead>
                     <tr>
-                      <th><span class="VisitaData">Data:</span></span></th>
-                      <th><span class="VisitaEstado">Estado:</span></span></th>
-                      <th><span class="VisitaCidade">Cidade:</span></span></th>
-                      <th><span class="VisitaCliente">Litros:</span></span></th>
-                      <th><span class="VisitaCliente">Litro/R$:</span></span></th>
-                      <th><span class="VisitaCliente">Total:</span></span></th>
+                      <th><span class="VisitaData">Data</span></th>
+                      <th><span class="VisitaEstado">Estado</span></th>
+                      <th><span class="VisitaCidade">Cidade</span></th>
+                      <th><span class="VisitaLitros">Litros</span></th>
+                      <th><span class="VisitaLitrosReal">Litro/R$</span></th>
+                      <th><span class="VisitaValorTotal">Total</span></th>
                     </tr>
                   </thead>
                     <tbody>
                       <tr>
-                        <td><span id="VisitaData">20/02/2022</span></span></td>
+                        <td><span id="VisitaData">20/02/2022</span></td>
                         <td><span id="VisitaEstado">Minas Gerais</span></td>
                         <td><span id="VisitaCidade">Belo Horizonte</span></td>
-                        <td><span id="VisitaCidade">50,00</span></td>
-                        <td><span id="VisitaCliente">7,50</span></td>
-                        <td><span id="VisitaCliente">R$30,00</span></td>
+                        <td><span id="VisitaLitros">50,00</span></td>
+                        <td><span id="VisitaLitrosReal">7,50</span></td>
+                        <td><span id="VisitaValorTotal">R$30,00</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -137,13 +135,13 @@
                 <table class="table table-hover" id="tabela">
                     <thead>
                       <tr>
-                        <th>Data</th>
-                        <th>Lanche</th>
-                        <th>Almoço</th>
-                        <th>Jantar</th>
-                        <th>Hospedagem</th>
-                        <th>Outros</th>
-                        <th>Total</th>
+                        <th><span class="DespesaData">Data</span></th>
+                        <th><span class="ValorLanche">Lanche</span></th>
+                        <th><span class="ValorAlmoco">Almoço</span></th>
+                        <th><span class="ValorJantar">Jantar</span></th>
+                        <th><span class="ValorHospedagem">Hospedagem</span></th>
+                        <th><span class="ValorOutros">Outros</span></th>
+                        <th><span class="ValorTotal">Total</span></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -171,21 +169,21 @@
                 <table class="table table-hover" id="tabela">
                   <thead style="background:#f3f3f3 ;">
                     <tr>
-                      <th>Distância Google Maps</th>
-                      <th>Valor Médio Litro Combústivel</th>
-                      <th>Consumo Autorizado (km/L)</th>
+                      <th class="DistanciaGoogle">Distância Google Maps</th>
+                      <th class="ValorLanche">Valor Médio Litro Combústivel</th>
+                      <th class="ValorAlmoco">Consumo Autorizado (km/L)</th>
                     </tr>
                   </thead>
                   <tbody>
                       <tr>
-                          <th><span id="Dista">XXXX</span></th>
+                          <th><span id="DistanciaGoogle">XXXX</span></th>
                           <th><span id="ValorLanche">R$0,00</span></th>
                           <th><span id="ValorAlmoco">XXXX</span></th>                         
                         </tr>
                         <tr style="background:#f3f3f3;">
-                          <th><span id="Dista">Distância a ser pago (Google + 5%)</span></th>
-                          <th><span id="ValorLanche">Valor Total a ser pago</span></th>
-                          <th><span id="ValorAlmoco"></span></th>                         
+                          <th><span id="DistSerPago">Distância a ser pago (Google + 5%)</span></th>
+                          <th><span id="ValorTotalPago">Valor Total a ser pago</span></th>
+                          <th><span id=""></span></th>                         
                         </tr>
                         <tr>
                           <th><span id="Dista">XXXX</span></th>
@@ -230,26 +228,26 @@
                 <table class="table table-hover" id="tabela">
                     <thead style="background:#f3f3f3 ;">
                       <tr>
-                        <th><span class="Prefixo">Valor Total Despesas</span></th>
-                        <th><span class="TituloAdiantamento">Valor Total Abastecimentos</span></th>
-                        <th><span class="ParcelaAdiantamento"></span></th>
+                        <th><span class="ValorTotalDespesas">Valor Total Despesas</span></th>
+                        <th><span class="ValorTotalAbastecimento">Valor Total Abastecimentos</span></th>
+                        <th><span class=""></span></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th><span id="Prefixo">R$470,00</span></th>
-                        <th><span id="ValorLanche">R$0,00</span></th>
-                        <th><span id="ValorAlmoco"></span></th>
+                        <th><span id="ValorTotalDespesas">R$470,00</span></th>
+                        <th><span id="ValorTotalAbastecimento">R$0,00</span></th>
+                        <th><span id=""></span></th>
                       </tr>
                       <tr style="background:#f3f3f3 ;">
-                        <th><span id="Prefixo">Adiantamento de Viagem</span></th>
-                        <th><span id="ValorLanche">Valor Total Geral Despesas</span></th>
-                        <th><span id="ValorAlmoco"></span>Acerto de Viagem</th>
+                        <th><span class="AdiantamentoViagem">Adiantamento de Viagem</span></th>
+                        <th><span class="ValorTotalDespesas">Valor Total Geral Despesas</span></th>
+                        <th><span class="AcertoViagem"></span>Acerto de Viagem</th>
                       </tr>
                       <tr>
-                        <th><span id="Prefixo">XXXX</span></th>
-                        <th><span id="ValorLanche">R$0,00</span></th>
-                        <th><span id="ValorAlmoco">R$0,00</span></th>
+                        <th><span id="AdiantamentoViagem">XXXX</span></th>
+                        <th><span id="ValorTotalDespesas">R$0,00</span></th>
+                        <th><span id="AcertoViagem">R$0,00</span></th>
                       </tr>
                     </tbody>
                   </table>
