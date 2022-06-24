@@ -12,9 +12,7 @@
             h2   { font-size: 12px; color: #fff; }
             h3   { font-size:12px; color: #002A8F; font-weight: bold; margin-bottom: 20px; margin-top: 20px;}
             span { margin: 5px; font-size: 12px; font-weight: 600;} 
-            #divSecao { background: #002A8F; padding: 5px; border-radius: 3px; /* margin: 30px 0;*/}
-            #divAbastevimento { background: #002A8F; padding: 5px; border-radius: 3px; margin-top: 5px; border-color: #000;}
-            /* #tabela { margin-bottom:40px;} */
+            .divSecao { background: #002A8F; padding: 5px; border-radius: 3px;}
             td  { padding: 0! important; margin: 0! important;}
             tr { margin: 0! important; padding: 0! important;}
             th { margin: 0! important; padding: 0! important; }
@@ -29,12 +27,12 @@
                 <div class="col-sm-4 p-3 text-dark"><img src="./images/centro-oeste.jpg" style="width:200px;" class="img-fluid" /></div>
             </div>
             <!-- Seçao 1 | ADIANTAMENTO -->
-            <div class="row text-center text-white" id="divSecao">
+            <div class="row text-center text-white divSecao">
                 <h2>INFORMAÇÕES ADIANTAMENTO</h2>
             </div>
             <!-- Dados | ADIANTAMENTO -->
             <div class="row">
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                     <tbody>
                       <tr>
                         <td><span class="idNome">Nome</span><span id="Nome">John woocommerce</span></td>
@@ -56,12 +54,12 @@
             </div>
 
             <!-- Seçao 2 | ACOMPANHANTES -->
-            <div class="row text-center text-white" id="divSecao">
+            <div class="row text-center text-white divSecao">
                 <h2>ACOMPANHANTES</h2>
             </div>
             <!-- Dados | ACOMPANHANTES -->
              <div class="row">
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                   <thead>
                     <tr>
                       <th><span class="Acompanhante">Nome</span></th>
@@ -78,12 +76,12 @@
             </div>
 
             <!-- Seçao 3 | LOCAIS VISITADOS | Total de campos = 25 -->
-            <div class="row text-center text-white" id="divSecao">
+            <div class="row text-center text-white divSecao">
                 <h2>LOCAIS VISITADOS</h2>
             </div>
             <!-- Dados | LOCAIS VISITADOS -->
             <div class="row">
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                   <thead>
                     <tr>
                       <th><span class="VisitaData">Data</span></th>
@@ -249,12 +247,12 @@
             </div>
 
             <!-- Seçao  4 ABASTECIMENTOS -->
-            <div class="row text-center text-white" id="divAbastevimento" >
+            <div class="row text-center text-white divSecao" style="margin-top: 45px;">
                 <h2>ABASTECIMENTOS</h2>
             </div>
              <!-- Dados | ABASTECIMENTOS -->
              <div class="row">
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                   <thead>
                     <tr>
                       <th><span class="VisitaData">Data</span></th>
@@ -319,12 +317,12 @@
             </div>
 
             <!-- Seçao  5 DETALHAMENTO DESPESAS -->
-            <div class="row text-center text-white" id="divSecao">
+            <div class="row text-center text-white divSecao">
                 <h2>DETALHAMENTO DESPESAS</h2>
             </div>
              <!-- Dados | DETALHE DESPESAS -->
              <div class="row">
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                     <thead>
                       <tr>
                         <th><span class="DespesaData">Data</span></th>
@@ -388,13 +386,13 @@
             </div>
 
             <!-- Seçao 6 | RESUMO E CONCILIAÇÃO -->
-            <div class="row text-center text-white" id="divSecao">
+            <div class="row text-center text-white divSecao">
                 <h2>RESUMO E CONCILIAÇÃO</h2>
             </div>
             <!-- Dados | RESUMO ABASTECIMENTO -->
             <div class="row">
               <h3 class="text-center">RESUMO ABASTECIMENTO</h3>
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                   <thead style="background:#f3f3f3 ;">
                     <tr>
                       <th class="DistanciaGoogle">Distância Google Maps</th>
@@ -424,7 +422,7 @@
               <!-- Dados | ADIANTAMENTO DE VIAGEM -->
               <div class="row">
                 <h3 class="text-center">ADIANTAMENTO DE VIAGEM</h3>
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                     <thead style="background:#f3f3f3 ;">
                       <tr>
                         <th><span class="Prefixo">Prefixo</span></th>
@@ -453,7 +451,7 @@
               <!-- Dados | VALOR A SER PAGO -->
               <div class="row">
                 <h3 class="text-center">VALOR A SER PAGO</h3>
-                <table class="table table-hover" id="tabela">
+                <table class="table table-hover" >
                     <thead style="background:#f3f3f3 ;">
                       <tr>
                         <th><span class="ValorTotalDespesas">Valor Total Despesas</span></th>
@@ -484,7 +482,7 @@
               <div class="row text-left text-black">
                 <h2 style="color:#000;">APROVADOR POR</h2>
             </div>
-            <table class="table table-hover" id="tabela">
+            <table class="table table-hover" >
               
               <tbody>
                 <tr style="background:#F3F3F3;">
