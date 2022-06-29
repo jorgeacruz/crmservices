@@ -1,0 +1,138 @@
+<html>
+	<head>
+	<!-- =================================================================================================== -->
+	<!-- BIBLIOTECAS PADRÃ•Es DO FLUIG -->
+	<!-- =================================================================================================== -->
+		<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+
+	<!-- =================================================================================================== -->
+	<!-- CSS DO FORMULÃ�RIO -->
+	<!-- =================================================================================================== -->
+		<link rel="stylesheet" href="./style/styles.css">
+
+	<!-- =================================================================================================== -->
+	<!-- USAR CONSTRAINTS -->
+	<!-- =================================================================================================== -->
+		<script type="text/javascript" src="./js/script.js"></script>
+
+	<!-- =================================================================================================== -->
+	<!-- =================================================================================================== -->
+	<!-- SWEET ALERT 2 -->
+	<!-- =================================================================================================== -->
+		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+	<!-- Incio do formulario -->
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span class="fluigicon fluigicon-user icon-md"></span>Requisitante</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label>Nome</label>
+					<input name="NOME" type="text" id="NOME" class="form-control" placeholder="Digite seu nome"/>
+				</div>
+				<div class="form-group col-md-6">
+					<label>Email</label>
+					<input name="EMAIL" type="email" id="EMAIL" class="form-control" placeholder="Digite seu email"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-2">
+					<label>Data Nascimento</label>
+					<input type="text" id="MEUCALENDARIO" name="MEUCALENDARIO" class="form-control"/>
+				</div>
+				<div class="form-group col-md-4">
+					<label>Tipo de Ponto</label>
+					<div class="radio">
+						<label><input type="radio" name="tipoPonto" id="TIPOPONTO" value="Quiosque" /> Quiosque</label>
+						<label><input type="radio" name="tipoPonto" id="TIPOPONTO" value="Loja" />Loja</label>
+					</div>
+				</div>
+				<div class="form-group col-md-5">
+					<label>Dias de funcionamento</label>
+					<div class="checkbox">
+						<label><input type="checkbox" name="segunda" id="segunda"/>Segunda</label>
+						<label><input type="checkbox" name="terca" 	 id="terca"/>TerÃ§a</label>
+						<label><input type="checkbox" name="quarta"  id="quarta"/>Quarta</label>
+						<label><input type="checkbox" name="quinta"  id="quinta"/>Quinta</label>
+						<label><input type="checkbox" name="sexta"   id="sexta"/>Sexta</label>
+						<label><input type="checkbox" name="sabado"  id="sabado"/>Sábado</label>
+						<label><input type="checkbox" name="domingo" id="domingo"/>Domingo</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span  class="flaticon flaticon-add-pin icon-thumbnail-md"></span> Infomação do Ponto Comercial</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="form-group col-md-1">
+					<label for="cep">Cep</label>
+					<input type="text" class="form-control" name="cep" id="cep" mask="00000-000"/>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="cep">Logadouro</label>
+					<input type="text" class="form-control" name="logradouro" id="logradouro"/>
+				</div>
+				<div class="form-group col-md-1">
+					<label for="cep">Numero</label>
+					<input type="text" class="form-control" name="numero" id="numero"/>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="cep">Bairro</label>
+					<input type="text" class="form-control" name="bairro" id="bairro"/>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="cep">Cidade</label>
+					<input type="text" class="form-control" name="cidade" id="cidade"/>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="cep">Estado</label>
+					<input type="text" class="form-control" name="estado" id="estado"/>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label>Informações Adicionais</label>
+						<textarea rows="5" name="infomacoes" id="informacoes" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span  class="flaticon flaticon-add-pin icon-thumbnail-md"></span> Financeiro</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="form-group col-md-2">
+					<label>Valor</label>
+					<input type="number" name="valor" id="valor" class="form-control">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	
+</form>
+</div>
+</body>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>
