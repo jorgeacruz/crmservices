@@ -57,11 +57,12 @@
 						<label><input type="radio" name="tipoPonto" id="TIPOPONTO" value="Loja" />Loja</label>
 					</div>
 				</div>
+				
 				<div class="form-group col-md-5">
 					<label>Dias de funcionamento</label>
 					<div class="checkbox">
 						<label><input type="checkbox" name="segunda" id="segunda"/>Segunda</label>
-						<label><input type="checkbox" name="terca" 	 id="terca"/>TerÃ§a</label>
+						<label><input type="checkbox" name="terca" 	 id="terca"/>Terça</label>
 						<label><input type="checkbox" name="quarta"  id="quarta"/>Quarta</label>
 						<label><input type="checkbox" name="quinta"  id="quinta"/>Quinta</label>
 						<label><input type="checkbox" name="sexta"   id="sexta"/>Sexta</label>
@@ -69,6 +70,38 @@
 						<label><input type="checkbox" name="domingo" id="domingo"/>Domingo</label>
 					</div>
 				</div>
+				
+				<!-- Aplicação Campo Zoom / dev.fluig.com -->
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label>Diretor Responsavel</label>
+						<input
+							type="zoom"
+							id = "c7_total"
+							name="c7_total"
+							data-zoom="{
+								'displayKey':'colleagueName',
+								'datasetId':'colleague',
+								'maximumSelectionLength':'2',
+								'placeholder':'Escolha o usuário',
+								'fields':[
+									{
+									'field':'colleagueId',
+									'label':'ID'
+									},{
+									'field':'colleagueName',
+									'label':'Nome',
+									'standard':'true'
+									},{
+									'field':'login',
+									'label':'Login'
+									}
+								]
+							}"
+						/>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -76,10 +109,11 @@
 
 	<div class="panel panel-primary">
 		<div class="panel-heading">
-			<h3 class="panel-title"><span  class="flaticon flaticon-add-pin icon-thumbnail-md"></span> Infomação do Ponto Comercial</h3>
+			<h3 class="panel-title"><span  class="fluigicon fluigicon-map-marker icon-md"></span> Infomação do Ponto Comercial</h3>
 		</div>
 		<div class="panel-body">
 			<div class="row">
+				<!-- aplicando API VIACEP NOS CAMPOS -->
 				<div class="form-group col-md-1">
 					<label for="cep">Cep</label>
 					<input type="text" class="form-control" name="cep" id="cep" mask="00000-000"/>
@@ -104,6 +138,8 @@
 					<label for="cep">Estado</label>
 					<input type="text" class="form-control" name="estado" id="estado"/>
 				</div>
+
+				<!-- Textarea -->
 				<div class="row">
 					<div class="form-group col-md-12">
 						<label>Informações Adicionais</label>
@@ -114,10 +150,10 @@
 		</div>
 	</div>
 	
-	
+	<!-- Add fluigIcons -->
 	<div class="panel panel-primary">
 		<div class="panel-heading">
-			<h3 class="panel-title"><span  class="flaticon flaticon-add-pin icon-thumbnail-md"></span> Financeiro</h3>
+			<h3 class="panel-title"><span  class="fluigicon fluigicon-user icon-md"></span> Financeiro</h3>
 		</div>
 		<div class="panel-body">
 			<div class="row">
@@ -126,6 +162,52 @@
 					<input type="number" name="valor" id="valor" class="form-control">
 				</div>
 			</div>
+
+		</div>
+	</div>
+
+	<!-- Tabela Pai e Filho -->
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span  class="fluigicon fluigicon-user icon-md"></span> Responsavel pelo Projeto</h3>
+		</div>
+		<div class="panel-body">
+			
+			<table tablename="responsaveistabela" class="table table-hover">
+				<thead>
+					Responsaveis
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input
+								type="zoom"
+								id = "responsaveis"
+								name="responsaveis"
+								data-zoom="{
+									'displayKey':'colleagueName',
+									'datasetId':'colleague',
+									'maximumSelectionLength':'2',
+									'placeholder':'Escolha o usuário',
+									'fields':[
+										{
+										'field':'colleagueId',
+										'label':'ID'
+										},{
+										'field':'colleagueName',
+										'label':'Nome',
+										'standard':'true'
+										},{
+										'field':'login',
+										'label':'Login'
+										}
+									]
+								}"
+							/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 
 		</div>
 	</div>
