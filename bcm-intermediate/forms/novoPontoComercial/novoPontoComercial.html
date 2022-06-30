@@ -12,12 +12,13 @@
 	<!-- =================================================================================================== -->
 	<!-- CSS DO FORMULÃ�RIO -->
 	<!-- =================================================================================================== -->
-		<link rel="stylesheet" href="./style/styles.css">
+		<link rel="stylesheet" href="style/styles.css">
 
 	<!-- =================================================================================================== -->
 	<!-- USAR CONSTRAINTS -->
 	<!-- =================================================================================================== -->
-		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
 
 	<!-- =================================================================================================== -->
 	<!-- =================================================================================================== -->
@@ -53,8 +54,8 @@
 				<div class="form-group col-md-4">
 					<label>Tipo de Ponto</label>
 					<div class="radio">
-						<label><input type="radio" name="tipoPonto" id="TIPOPONTO" value="Quiosque" /> Quiosque</label>
-						<label><input type="radio" name="tipoPonto" id="TIPOPONTO" value="Loja" />Loja</label>
+						<label><input type="radio" name="TIPOPONTO" id="TIPOPONTO" value="Quiosque" /> Quiosque</label>
+						<label><input type="radio" name="TIPOPONTO" id="TIPOPONTO" value="Loja" />Loja</label>
 					</div>
 				</div>
 				
@@ -77,8 +78,8 @@
 						<label>Diretor Responsavel</label>
 						<input
 							type="zoom"
-							id = "c7_total"
-							name="c7_total"
+							id = "DIRETOR"
+							name="DIRETOR"
 							data-zoom="{
 								'displayKey':'colleagueName',
 								'datasetId':'colleague',
@@ -116,34 +117,34 @@
 				<!-- aplicando API VIACEP NOS CAMPOS -->
 				<div class="form-group col-md-1">
 					<label for="cep">Cep</label>
-					<input type="text" class="form-control" name="cep" id="cep" mask="00000-000"/>
+					<input type="text" class="form-control" name="CEP" id="CEP" mask="00000-000"/>
 				</div>
 				<div class="form-group col-md-2">
 					<label for="cep">Logadouro</label>
-					<input type="text" class="form-control" name="logradouro" id="logradouro"/>
+					<input type="text" class="form-control" name="LOGRADOURO" id="LOGRADOURO"/>
 				</div>
 				<div class="form-group col-md-1">
 					<label for="cep">Numero</label>
-					<input type="text" class="form-control" name="numero" id="numero"/>
+					<input type="text" class="form-control" name="NUMERO" id="NUMERO"/>
 				</div>
 				<div class="form-group col-md-2">
 					<label for="cep">Bairro</label>
-					<input type="text" class="form-control" name="bairro" id="bairro"/>
+					<input type="text" class="form-control" name="BAIRRO" id="BAIRRO"/>
 				</div>
 				<div class="form-group col-md-2">
 					<label for="cep">Cidade</label>
-					<input type="text" class="form-control" name="cidade" id="cidade"/>
+					<input type="text" class="form-control" name="CIDADE" id="CIDADE"/>
 				</div>
 				<div class="form-group col-md-2">
 					<label for="cep">Estado</label>
-					<input type="text" class="form-control" name="estado" id="estado"/>
+					<input type="text" class="form-control" name="ESTADO" id="ESTADO"/>
 				</div>
 
 				<!-- Textarea -->
 				<div class="row">
 					<div class="form-group col-md-12">
 						<label>Informações Adicionais</label>
-						<textarea rows="5" name="infomacoes" id="informacoes" class="form-control"></textarea>
+						<textarea rows="5" name="INFORMACOES" id="INFORMACOES" class="form-control"></textarea>
 					</div>
 				</div>
 			</div>
@@ -158,8 +159,14 @@
 		<div class="panel-body">
 			<div class="row">
 				<div class="form-group col-md-2">
+					<label>Moeda</label>
+					<select name="moeda" id="moeda" class="form-control" dataset="dsCadastroMoeda" datasetKey="simbolo" datasetValue="nomeMoeda" >
+
+					</select>
+				</div>
+				<div class="form-group col-md-2">
 					<label>Valor</label>
-					<input type="number" name="valor" id="valor" class="form-control">
+					<input type="number" name="VALOR" id="VALOR" class="form-control">
 				</div>
 			</div>
 
@@ -179,7 +186,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><input type="zoom" id = "responsavel" name="responsavel"
+							<td><input type="zoom" id = "RESPONSAVEL" name="RESPONSAVEL"
 									data-zoom="{
 										'displayKey':'colleagueName',
 										'datasetId':'colleague',

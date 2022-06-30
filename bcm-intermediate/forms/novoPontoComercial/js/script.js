@@ -1,14 +1,22 @@
 
-var dataNascimento = FLUIGC.calendar('#MEUCALENDARIO');
-
-
-$("#cep").blur(function(){
+$(document).ready(function(){
 	
-    $.getJSON("//viacep.com.br/ws/" + $("#cep").val() +"/json/", function(dados){
-    $("#logradouro").val(dados.logradouro);
-    $("#bairro").val(dados.bairro);
-    $("#cidade").val(dados.localidade);
-    $("#estado").val(dados.uf);
-    });
-    
+	var dataNascimento = FLUIGC.calendar('#MEUCALENDARIO');
+
+	$("#CEP").blur(function(){
+		
+		console.log('Entrei no viacep');
+		
+	    $.getJSON("//viacep.com.br/ws/" + $("#CEP").val() +"/json/", function(dados){
+	    $("#LOGRADOURO").val(dados.logradouro);
+	    $("#BAIRRO").val(dados.bairro);
+	    $("#CIDADE").val(dados.localidade);
+	    $("#ESTADO").val(dados.uf);
+	    });
+	    
+	});
+   
+
 });
+
+

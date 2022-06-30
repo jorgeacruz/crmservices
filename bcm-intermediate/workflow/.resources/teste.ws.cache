@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_131" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>volume</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>fichario</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.DocumentDto">
+      <void property="UUID">
+       <string>146A879A-CECE-4EA6-B8C2-E7AFB08059C0</string>
+      </void>
+      <void property="accessCount">
+       <int>0</int>
+      </void>
+      <void property="additionalComments">
+       <string></string>
+      </void>
+      <void property="cardDescription">
+       <string>meeting</string>
+      </void>
+      <void property="colleagueId">
+       <string>admin</string>
+      </void>
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="createDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="datasetName">
+       <string>FLUIGADHOC</string>
+      </void>
+      <void property="documentDescription">
+       <string>FLUIGADHOC</string>
+      </void>
+      <void property="documentId">
+       <int>3</int>
+      </void>
+      <void property="documentPropertyNumber">
+       <int>3</int>
+      </void>
+      <void property="documentPropertyVersion">
+       <int>1000</int>
+      </void>
+      <void property="documentType">
+       <string>4</string>
+      </void>
+      <void property="documentTypeId">
+       <string></string>
+      </void>
+      <void property="expirationDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="iconId">
+       <int>0</int>
+      </void>
+      <void property="keyWord">
+       <string></string>
+      </void>
+      <void property="languageId">
+       <string></string>
+      </void>
+      <void property="lastModifiedDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="parentDocumentId">
+       <int>2</int>
+      </void>
+      <void property="phisicalFile">
+       <string>FLUIGADHOC.html</string>
+      </void>
+      <void property="phisicalFileSize">
+       <float>0.24022579</float>
+      </void>
+      <void property="publisherId">
+       <string>admin</string>
+      </void>
+      <void property="relatedFiles">
+       <string>FLUIGADHOC.html FLUIGADHOC.js FLUIGADHOC.css FLUIGADHOC1.png FLUIGADHOC2.png FLUIGADHOC3.png FLUIGADHOC4.png FLUIGADHOC.properties FLUIGADHOC_en_US.properties FLUIGADHOC_es.properties FLUIGADHOC_pt_BR.properties</string>
+      </void>
+      <void property="topicId">
+       <int>0</int>
+      </void>
+      <void property="validationStartDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="version">
+       <int>1000</int>
+      </void>
+      <void property="versionDescription">
+       <string></string>
+      </void>
+      <void property="volumeId">
+       <string>Default</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.DocumentDto">
+      <void property="UUID">
+       <string>C9D8D5CD-16DC-444B-9FBA-A93A11A17030</string>
+      </void>
+      <void property="accessCount">
+       <int>0</int>
+      </void>
+      <void property="additionalComments">
+       <string></string>
+      </void>
+      <void property="cardDescription">
+       <string>activity</string>
+      </void>
+      <void property="colleagueId">
+       <string>admin</string>
+      </void>
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="createDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="datasetName">
+       <string>FLUIGADHOCPROCESS</string>
+      </void>
+      <void property="documentDescription">
+       <string>FLUIGADHOCPROCESS</string>
+      </void>
+      <void property="documentId">
+       <int>4</int>
+      </void>
+      <void property="documentPropertyNumber">
+       <int>4</int>
+      </void>
+      <void property="documentPropertyVersion">
+       <int>1000</int>
+      </void>
+      <void property="documentType">
+       <string>4</string>
+      </void>
+      <void property="documentTypeId">
+       <string></string>
+      </void>
+      <void property="expirationDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="iconId">
+       <int>0</int>
+      </void>
+      <void property="keyWord">
+       <string></string>
+      </void>
+      <void property="languageId">
+       <string></string>
+      </void>
+      <void property="lastModifiedDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="parentDocumentId">
+       <int>2</int>
+      </void>
+      <void property="phisicalFile">
+       <string>FLUIGADHOCPROCESS.html</string>
+      </void>
+      <void property="phisicalFileSize">
+       <float>0.23721981</float>
+      </void>
+      <void property="publisherId">
+       <string>admin</string>
+      </void>
+      <void property="relatedFiles">
+       <string>FLUIGADHOCPROCESS.html FLUIGADHOCPROCESS.js FLUIGADHOCPROCESS.css FLUIGADHOCPROCESS1.png FLUIGADHOCPROCESS2.png FLUIGADHOCPROCESS.properties FLUIGADHOCPROCESS_en_US.properties FLUIGADHOCPROCESS_es.properties FLUIGADHOCPROCESS_pt_BR.properties</string>
+      </void>
+      <void property="topicId">
+       <int>0</int>
+      </void>
+      <void property="validationStartDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>21</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="version">
+       <int>1000</int>
+      </void>
+      <void property="versionDescription">
+       <string></string>
+      </void>
+      <void property="volumeId">
+       <string>Default</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.DocumentDto">
+      <void property="UUID">
+       <string>3807C03B-1C78-412A-BF9B-F2F73F9E547D</string>
+      </void>
+      <void property="accessCount">
+       <int>0</int>
+      </void>
+      <void property="additionalComments">
+       <string></string>
+      </void>
+      <void property="cardDescription">
+       <string></string>
+      </void>
+      <void property="colleagueId">
+       <string>admin</string>
+      </void>
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="createDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>29</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="datasetName">
+       <string>dsCRMLiberaAcesso</string>
+      </void>
+      <void property="documentDescription">
+       <string>frmCRMLiberaAcesso</string>
+      </void>
+      <void property="documentId">
+       <int>5</int>
+      </void>
+      <void property="documentPropertyNumber">
+       <int>5</int>
+      </void>
+      <void property="documentPropertyVersion">
+       <int>64000</int>
+      </void>
+      <void property="documentType">
+       <string>4</string>
+      </void>
+      <void property="documentTypeId">
+       <string></string>
+      </void>
+      <void property="expirationDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>22</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="iconId">
+       <int>0</int>
+      </void>
+      <void property="inheritSecurity">
+       <boolean>true</boolean>
+      </void>
+      <void property="keyWord">
+       <string></string>
+      </void>
+      <void property="languageId">
+       <string></string>
+      </void>
+      <void property="lastModifiedDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>29</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="parentDocumentId">
+       <int>2</int>
+      </void>
+      <void property="phisicalFile">
+       <string>frmCRMLiberaAcesso.html</string>
+      </void>
+      <void property="phisicalFileSize">
+       <float>0.007047653</float>
+      </void>
+      <void property="publisherId">
+       <string>admin</string>
+      </void>
+      <void property="relatedFiles">
+       <string>frmCRMLiberaAcesso.html util.js bgCRM.png style.css</string>
+      </void>
+      <void property="topicId">
+       <int>0</int>
+      </void>
+      <void property="validationStartDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>22</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="version">
+       <int>64000</int>
+      </void>
+      <void property="versionDescription">
+       <string></string>
+      </void>
+      <void property="volumeId">
+       <string>Default</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.DocumentDto">
+      <void property="UUID">
+       <string>0C1F0599-77AF-4D5A-9B85-F67D9DD1E9F7</string>
+      </void>
+      <void property="accessCount">
+       <int>0</int>
+      </void>
+      <void property="additionalComments">
+       <string></string>
+      </void>
+      <void property="cardDescription">
+       <string></string>
+      </void>
+      <void property="colleagueId">
+       <string>admin</string>
+      </void>
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="createDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>30</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="datasetName">
+       <string>novoPontoComercial</string>
+      </void>
+      <void property="documentDescription">
+       <string>novoPontoComercial</string>
+      </void>
+      <void property="documentId">
+       <int>31</int>
+      </void>
+      <void property="documentPropertyNumber">
+       <int>31</int>
+      </void>
+      <void property="documentPropertyVersion">
+       <int>71000</int>
+      </void>
+      <void property="documentType">
+       <string>4</string>
+      </void>
+      <void property="documentTypeId">
+       <string></string>
+      </void>
+      <void property="expirationDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>29</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="iconId">
+       <int>0</int>
+      </void>
+      <void property="inheritSecurity">
+       <boolean>true</boolean>
+      </void>
+      <void property="keyWord">
+       <string></string>
+      </void>
+      <void property="languageId">
+       <string></string>
+      </void>
+      <void property="lastModifiedDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>30</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="parentDocumentId">
+       <int>2</int>
+      </void>
+      <void property="phisicalFile">
+       <string>novoPontoComercial.html</string>
+      </void>
+      <void property="phisicalFileSize">
+       <float>0.001004219</float>
+      </void>
+      <void property="publisherId">
+       <string>admin</string>
+      </void>
+      <void property="relatedFiles">
+       <string>script.js novoPontoComercial.html novoPontoComercial_en_US.properties novoPontoComercial_es.properties novoPontoComercial_pt_BR.properties styles.css</string>
+      </void>
+      <void property="topicId">
+       <int>0</int>
+      </void>
+      <void property="validationStartDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>29</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="version">
+       <int>71000</int>
+      </void>
+      <void property="versionDescription">
+       <string></string>
+      </void>
+      <void property="volumeId">
+       <string>Default</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.DocumentDto">
+      <void property="UUID">
+       <string>24A6DD5F-5E3B-475E-83DB-CB9A94FC8E4E</string>
+      </void>
+      <void property="accessCount">
+       <int>0</int>
+      </void>
+      <void property="additionalComments">
+       <string></string>
+      </void>
+      <void property="colleagueId">
+       <string>admin</string>
+      </void>
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="createDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>30</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="datasetName">
+       <string>dsCadastroMoeda</string>
+      </void>
+      <void property="documentDescription">
+       <string>cadastroMoeda</string>
+      </void>
+      <void property="documentId">
+       <int>36</int>
+      </void>
+      <void property="documentPropertyNumber">
+       <int>36</int>
+      </void>
+      <void property="documentPropertyVersion">
+       <int>1000</int>
+      </void>
+      <void property="documentType">
+       <string>4</string>
+      </void>
+      <void property="documentTypeId">
+       <string></string>
+      </void>
+      <void property="expirationDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>30</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="iconId">
+       <int>0</int>
+      </void>
+      <void property="inheritSecurity">
+       <boolean>true</boolean>
+      </void>
+      <void property="keyWord">
+       <string></string>
+      </void>
+      <void property="languageId">
+       <string></string>
+      </void>
+      <void property="lastModifiedDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>30</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="parentDocumentId">
+       <int>2</int>
+      </void>
+      <void property="phisicalFile">
+       <string>cadastroMoeda.html</string>
+      </void>
+      <void property="phisicalFileSize">
+       <float>0.0010461807</float>
+      </void>
+      <void property="publisherId">
+       <string>admin</string>
+      </void>
+      <void property="relatedFiles">
+       <string>cadastroMoeda.html</string>
+      </void>
+      <void property="topicId">
+       <int>0</int>
+      </void>
+      <void property="validationStartDate">
+       <object class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <void property="day">
+         <int>30</int>
+        </void>
+        <void property="hour">
+         <int>0</int>
+        </void>
+        <void property="minute">
+         <int>0</int>
+        </void>
+        <void property="month">
+         <int>6</int>
+        </void>
+        <void property="second">
+         <int>0</int>
+        </void>
+        <void property="timezone">
+         <int>-180</int>
+        </void>
+        <void property="year">
+         <int>2022</int>
+        </void>
+       </object>
+      </void>
+      <void property="version">
+       <int>1000</int>
+      </void>
+      <void property="versionDescription">
+       <string></string>
+      </void>
+      <void property="volumeId">
+       <string>Default</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>processosServidor</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>CadastroNovoPonto</string>
+      </void>
+      <void property="processId">
+       <string>CadastroNovoPonto</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Listar Tarefas</string>
+      </void>
+      <void property="processId">
+       <string>FLUIGADHOC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>novo_diagrama</string>
+      </void>
+      <void property="processId">
+       <string>novoPontoComercial</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>novo_diagrama</string>
+      </void>
+      <void property="processId">
+       <string>SolicitaCadastroNovoPontoComercial</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>wkfCRMLiberaAcesso</string>
+      </void>
+      <void property="processId">
+       <string>wkfCRMLiberaAcesso</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="9">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
