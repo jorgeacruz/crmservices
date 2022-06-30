@@ -166,55 +166,52 @@
 		</div>
 	</div>
 
-	<!-- Tabela Pai e Filho -->
+	<!-- tabela PAI e Filho -->
 	<div class="panel panel-primary">
 		<div class="panel-heading">
-			<h3 class="panel-title"><span  class="fluigicon fluigicon-user icon-md"></span> Responsavel pelo Projeto</h3>
+			<h3 class="panel-title"><span  class="fluigicon fluigicon-user icon-md"></span> Responsavel pelo projeto</h3>
 		</div>
 		<div class="panel-body">
-			
-			<table tablename="responsaveistabela" class="table table-hover">
-				<thead>
-					Responsaveis
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<input
-								type="zoom"
-								id = "responsaveis"
-								name="responsaveis"
-								data-zoom="{
-									'displayKey':'colleagueName',
-									'datasetId':'colleague',
-									'maximumSelectionLength':'2',
-									'placeholder':'Escolha o usuário',
-									'fields':[
-										{
-										'field':'colleagueId',
-										'label':'ID'
-										},{
-										'field':'colleagueName',
-										'label':'Nome',
-										'standard':'true'
-										},{
-										'field':'login',
-										'label':'Login'
-										}
-									]
-								}"
-							/>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="row">
+				<table tablename="responsaveisTabela" class="table table-hover">
+					<thead>
+						<tr>Responsaveis</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="zoom" id = "responsavel" name="responsavel"
+									data-zoom="{
+										'displayKey':'colleagueName',
+										'datasetId':'colleague',
+										'maximumSelectionLength':'2',
+										'placeholder':'Escolha o usuário',
+										'fields':[
+											{
+											'field':'colleagueId',
+											'label':'ID'
+											},{
+											'field':'colleagueName',
+											'label':'Nome',
+											'standard':'true'
+											},{
+											'field':'login',
+											'label':'Login'
+											}
+										]
+									}"
+								/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
 		</div>
 	</div>
+
 	
 	
 </form>
 </div>
 </body>
-<script type="text/javascript" src="./js/script.js"></script>
 </html>
