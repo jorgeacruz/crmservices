@@ -1,0 +1,599 @@
+<html>
+	<head>
+		<!-- =================================================================================================== -->
+		<!-- BIBLIOTECAS PADR�ES DO FLUIG -->
+		<!-- =================================================================================================== -->
+		<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+		<!-- =================================================================================================== -->
+		<!-- CSS DO FORMUL�RIO -->
+		<!-- =================================================================================================== -->
+		<link rel="stylesheet" href="style/style.css">
+		<!-- =================================================================================================== -->
+		<!-- USAR CONSTRAINTS -->
+		<!-- =================================================================================================== -->
+		<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+		<!-- =================================================================================================== -->
+		<!-- BOOTSTRAP -->
+		<!-- =================================================================================================== -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- =================================================================================================== -->
+		<!-- SWEET ALERT 2 -->
+		<!-- =================================================================================================== -->
+		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<!-- =================================================================================================== -->
+		<!-- =========================================================================================================== -->
+		<!-- BIBLIOTECA DATA MOMENTS -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+		<!-- =========================================================================================================== -->
+	</head>
+	<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">
+
+				<!-- =================================================================================================== -->
+				<!-- CAMPOS PADRÀES PARA PREENCHIMENTO HIDDEN -->
+				<input id="SOLICITANTE" name="SOLICITANTE" type="hidden">
+				<input id="ATIVIDADE" name="ATIVIDADE" type="hidden">
+				<input id="NUMPROCESSO" name="NUMPROCESSO" type="hidden">
+				<input id="DESCRICAO_PRODUTOR" name="DESCRICAO_PRODUTOR" value="" type="hidden">
+				<input id="ID_PASTA_PRODUTOR" name="ID_PASTA_PRODUTOR" type="hidden">
+				<input id="MONITORA_DOC" name="MONITORA_DOC" value="" type="hidden">
+				<!-- =================================================================================================== -->
+
+				<div class="form-group col-md-12">
+					<div class="row">
+						<div class="form-group col-md-1"></div>
+						<div class="form-group col-md-10" id="PAINEL_CADATRO_FORNECEDOR">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="form-group col-md-2 col-md-2" style="text-align: left !important; top: 8px !important">
+											<img src="img/LogoFruit.png" title="Dados Pessoais" style="width: 200px;">		
+										</div>
+										<div class="form-group col-md-8" style="text-align: center !important; top: 24px !important">
+											<label class="secao2">&nbsp;&nbsp;&nbsp;CADASTRO DE CLIENTES</label>
+										</div>
+									</div>									
+								</div>
+								<div id="collapseOne" class="panel-collapse ">
+									<div class="panel-body">
+										<ul class="nav nav-tabs clearfix justify-content-center" role="tablist">
+											<li class="active">
+												<a href="#divDADOS" role="tab" data-toggle="tab" id="ABA_DADOS">
+													<img src="img/user.svg" title="Dados Produtor" style="width: 38px;">&nbsp;Dados Cliente
+												</a>
+											</li>
+											<li >
+												<a href="#divPRODUTOS" role="tab" data-toggle="tab" id="ABA_PRODUTOS">
+													<img src="img/package.svg" title="Produtos" style="width: 38px;">&nbsp;Destinos
+												</a>
+											</li>
+											<li >
+												<a href="#divBANCO" role="tab" data-toggle="tab" id="ABA_BANCO">
+													<img src="img/cash.svg" title="Dados Banc�rios" style="width: 38px;">&nbsp;Contatos
+												</a>
+											</li>											
+											<li >
+												<a href="#divDOCUMENTOS" role="tab" data-toggle="tab" id="ABA_DOCUMENTOS">
+													<img src="img/folder.svg" title="Documentos" style="width: 38px;">&nbsp;Pré-Alerta
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="divDADOS">
+												<!-- SEÇÃO - DADOS DO CLIENTE -->
+												<div class="row">
+													<div class="form-group col-md-3" style="display: auto;">
+														<label class="info">NIF/NIPC</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-company icon-md"></i>
+															</span>
+															<input id="NIF" name="NIF" class="form-control block" type="text">
+														</div>														
+													</div>
+													<div class="form-group col-md-6" style="display: auto;">
+														<label class="info">Razão Social</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-company icon-md"></i>
+															</span>
+															<input id="RAZAO" name="RAZAO" class="form-control block" type="text">
+														</div>														
+													</div>
+													<div class="form-group col-md-3" style="display: auto;">
+														<label class="info">Nome Fantasia</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-company icon-md"></i>
+															</span>
+															<input id="NOMEFANTASIA" name="NOMEFANTASIA" class="form-control block" type="text">
+														</div>												
+													</div>
+													
+												</div>
+												<div class="row">
+													<div class="form-group col-md-3">
+														<label class="info">Zip Code</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="CEP" name="CEP" class="form-control block" type="text" mask="00000-000">
+														</div>												
+													</div>													
+													<div class="form-group col-md-4">
+														<label class="info">Endereço</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="ENDERECO" name="ENDERECO" class="form-control block" type="text">
+														</div>												
+													</div>
+													<div class="form-group col-md-2">
+														<label class="info">Número</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="NUMERO" name="NUMERO" class="form-control block" type="text">
+														</div>												
+													</div>
+													<div class="form-group col-md-3">
+														<label class="info">Bairro</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="BAIRRO" name="BAIRRO" class="form-control block" type="text">
+														</div>												
+													</div>
+												</div>
+												<div class="row">
+													<div class="form-group col-md-3">
+														<label class="info">Complemento</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="COMPLEMENTO" name="COMPLEMENTO" class="form-control block" type="text">
+														</div>												
+													</div>
+													<div class="form-group col-md-4">
+														<label class="info">Cidade</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="CIDADE" name="CIDADE" class="form-control block" type="text">
+														</div>												
+													</div>
+													<div class="form-group col-md-2">
+														<label class="info">UF</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-pin icon-md"></i>
+															</span>
+															<input id="UF" name="UF" class="form-control block" type="text">
+														</div>												
+													</div>
+													<div class="form-group col-md-3">
+														<label class="info">Pais</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-page-default icon-md"></i>
+															</span>
+															<input id="PAIS" name="PAIS" class="form-control block" type="text">
+														</div>
+													</div>																																							
+												</div>
+												<div class="row">
+													<div class="form-group col-md-3">
+														<label class="info">Nome do Contato</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-person-add icon-md"></i>
+															</span>
+															<input id="NOME_CONTATO" name="NOME_CONTATO" class="form-control block" type="text">
+														</div>
+													</div>
+													<div class="form-group col-md-3">
+														<label class="info">E-mail</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-mail icon-md"></i>
+															</span>
+															<input id="EMAIL" name="EMAIL" class="form-control block" type="text">
+														</div>												
+													</div>
+													<div class="form-group col-md-3">
+														<label class="info">Telefone 1</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-contact-phone icon-md"></i>
+															</span>
+															<input id="TELEFONE1" name="TELEFONE1" class="form-control block" type="text" onblur="ajustaTelefone();" mask="(00) 00000-0000">
+															<input id="TELEFONE1_TXT" name="TELEFONE1_TXT" type="hidden">
+														</div>
+													</div>
+													<div class="form-group col-md-3">
+														<label class="info">Telefone 2</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-contact-phone icon-md"></i>
+															</span>
+															<input id="TELEFONE2" name="TELEFONE2" class="form-control block" type="text" mask="(00) 00000-0000">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="form-group col-md-3">
+														<label class="info">Linha de Crédito (Euro) <span class="required">*</span></label>
+														<input
+															type="zoom"
+															id = "FORMA_CONTATO"
+															name="FORMA_CONTATO"
+															class="form-control blockZoom"
+															data-zoom="{
+															'displayKey':'DESCRICAO',
+															'datasetId':'dsTf00001FormaContato',
+															'placeholder':'Selecione',
+															'maximumSelectionLength':'1',
+															'fields':[
+															{
+															'field':'DESCRICAO',
+															'label':'Tipo',
+															'standard':'true'
+															}
+															]
+															}"
+														/>											
+													</div>
+													<div class="form-group col-md-3">
+														<label class="info">Linha de Crédito (Dólar) <span class="required">*</span></label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-cash-transfer icon-md"></i>
+															</span>
+															<select name="modoPagamento" id="modoPagamento" class="form-control">
+																<option value="">Selecione</option>
+															</select>
+															
+														</div>
+													
+													</div>													
+													<div class="form-group col-md-3">
+														<label class="info">Moeda *</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="fluigicon fluigicon-money icon-md"></i>
+															</span>
+															<input id="PRAZO" name="PRAZO" class="form-control block" type="number">
+														</div>
+													</div>																									
+													<div class="form-group col-md-3">
+														<label class="info">Tempo Médio de Contato (Envio Maítimo)</label>
+														<div class="input-group">
+															<span class="input-group-addon">
+																<i class="flaticon flaticon-discount icon-md"></i>
+															</span>
+															<input id="COMISSAO" name="COMISSAO" class="form-control block" type="text" mask="##0,00%">
+														</div>
+													</div>
+												</div>
+															
+											</div>
+
+											<!-- SEÇÃO - DESTINOS -->
+											<div class="tab-pane" id="divPRODUTOS">
+												<table id="TAB_DESTINOS" tablename="TAB_DESTINOS" class="table table-hover" border="0" nodeletebutton="true" noaddbutton="true">
+													<thead>
+														<tr>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label class="info">Aeroporto / Porto  <span class="required">*</span></label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="flaticon flaticon-flight icon-md"></i>
+																			</span>
+																		<input type="text" name="AEROPORTO" id="AEROPORTO" class="form-control">
+																		</div>
+																</div>
+
+																
+																<div class="form-group col-md-3">
+																	<label class="info">Remarks  <span class="required">*</span></label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="fluigicon fluigicon-checked icon-md"></i>
+																			</span>
+																			<input type="text" name="REMARKS" id="REMARKS" class="form-control">
+																		</div>
+																</div>
+
+																<div class="form-group col-md-3">
+																	<label class="info">FTD <span class="required">*</span></label>
+																	<div class="input-group">
+																		<span class="input-group-addon">
+																			<i class="fluigicon fluigicon-checked icon-md"></i>
+																		</span>
+																	<input type="text" name="FTD" id="FTD" class="form-control">
+																	</div>
+																</div>
+
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label class="info">Notify <span class="required">*</span></label>
+																	<textarea rows="4" cols="50" name="NOTIFY" id="NOFITY" class="form-control"></textarea>
+																</div>
+
+																<div class="form-group col-md-6">
+																	<label class="info">Consignee <span class="required">*</span></label>
+																	<textarea rows="4" cols="50" name="CONSIGNEE" id="CONSIGNEE" class="form-control"></textarea>
+																</div>
+															</div>
+														</tr>
+													</thead>
+													<tbody>
+														<tr style="border: hidden !important">
+														
+															<td>
+																<div class="row">
+																	<div class="form-group col-md-6">
+																		<label class="info">Aeroporto / Porto  <span class="required">*</span></label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="flaticon flaticon-flight icon-md"></i>
+																			</span>
+																			<input type="text" name="AEROPORTO_EXTRA" id="AEROPORTO_EXTRA" class="form-control">
+																		</div>
+																		
+																	</div>
+	
+																	
+																	<div class="form-group col-md-3">
+																		<label class="info">Remarks  <span class="required">*</span></label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="fluigicon fluigicon-checked icon-md"></i>
+																			</span>
+																			<input type="text" name="REMARKS_EXTRA" id="REMARKS_EXTRA" class="form-control">
+																		</div>
+																		
+																		
+																	</div>
+	
+																	<div class="form-group col-md-3">
+																		<label class="info">FTD <span class="required">*</span></label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="fluigicon fluigicon-checked icon-md"></i>
+																			</span>
+																			<input type="text" name="FTD_EXTRA" id="FTD_EXTRA" class="form-control">
+																		</div>
+																	</div>
+	
+																</div>
+	
+																<div class="row">
+																	<div class="form-group col-md-6">
+																		<label class="info">Notify <span class="required">*</span></label>
+																		<textarea rows="4" cols="50" name="NOTIFY_EXTRA" id="NOTIFY_EXTRA" class="form-control"></textarea>
+																	</div>
+	
+																	<div class="form-group col-md-6">
+																		<label class="info">Consignee <span class="required">*</span></label>
+																		<textarea rows="4" cols="50" name="CONSIGNEE_EXTRA" id="CONSIGNEE_EXTRA" class="form-control"></textarea>
+																	</div>
+																	
+																	<div>
+																		<button class="btn btn-primary btn-sm" id="ADDITEM" name="ADDITEM" onclick="DESTINOSDelete(this);"><strong><i class="flaticon flaticon-close icon-md"></i> Remover Destino</strong></button>
+																	</div>
+																</div>
+
+															</td>
+													
+														</tr>
+		
+														<tr>
+															<td>
+																<button class="btn btn-success btn-sm" id="ADDITEM" name="ADDITEM" onclick="DESTINOS(); exibeCampos(this);"><i class="flaticon flaticon-circle-plus icon-md"></i> Adicionar Destino</button>
+															</td>
+														</tr>
+													</tbody>
+													
+												</table>
+											
+											</div>
+											
+											<!--SEÇÃO - DADOS CONTATO -->
+											<div class="tab-pane" id="divBANCO">
+												
+												<table tablename="TAB-DADOSCLIENTE" id="TAB-DADOSCLIENTE"  class="table table-hover" border="0" nodeletebutton="true" noaddbutton="true">
+													<thead>
+														<tr>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label class="info">Nome</label>
+																	<input name="NCONTATO" id="NCONTATO" class="form-control">
+																</div>
+																<div class="form-group col-md-6">
+																	<label class="info">Email</label>
+																	<input name="ECONTATO" id="ECONTATO" class="form-control">
+																</div>
+															</div>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label class="info">Cargo</label>
+																	<input name="cargo_contato" id="cargo_control" class="form-control" > 
+																</div>
+																<div class="form-group col-md-3">
+																	<label class="info">Telefone</label>
+																	<input name="telefone_contato" id="telefone_contato" class="form-control">
+																</div>
+																<div class="form-group col-md-3">
+																	<label class="info">Tipo de Contato</label>
+																	<div class="input-group">
+																		<span class="input-group-addon">
+																			<i class="flaticon flaticon-cash-transfer icon-md"></i>
+																		</span>
+																		<select name="tipo_contato" id="tipo_contato" class="form-control">
+																			<option value="fixo">Telefone Fixo</option>
+																			<option value="celular">Telefone Celular</option>
+																		</select>
+																		
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<button class="btn btn-success btn-sm" id="ADDITEM" name="ADDITEM" onclick="DADOSCONTATO(); exibeCampos(this);"><strong><i class="flaticon flaticon-circle-plus icon-md"></i> Adicionar Contato</strong></button>
+																</div>
+															</div>
+
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<div class="row">
+																	<div class="form-group col-md-6">
+																		<label class="info">Nome</label>
+																		<input name="PLUS_NCONTATO" id="PLUS_NCONTATO" class="form-control">
+																	</div>
+																	<div class="form-group col-md-6">
+																		<label class="info">Email</label>
+																		<input name="PLUS_ECONTATO" id="PLUS_ECONTATO" class="form-control">
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="form-group col-md-6">
+																		<label class="info">Cargo</label>
+																		<input name="PLUS_cargo_contato" id="PLUS_cargo_control" class="form-control" > 
+																	</div>
+																	<div class="form-group col-md-3">
+																		<label class="info">Telefone</label>
+																		<input name="PLUS_telefone_contato" id="PLUS_telefone_contato" class="form-control">
+																	</div>
+																	<div class="form-group col-md-3">
+																		<label class="info">Tipo de Contato</label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="flaticon flaticon-cash-transfer icon-md"></i>
+																			</span>
+																			<select name="PLUS_tipo_contato" id="tipo_contato" class="form-control">
+																				<option value="fixo">Telefone Fixo</option>
+																				<option value="celular">Telefone Celular</option>
+																			</select>
+																			
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="form-group col-md-6">
+																		<button class="btn btn-primary btn-sm" id="ADDITEM" name="ADDITEM" onclick="DADOSCONTATODelete()"><strong><i class="flaticon flaticon-close icon-md"></i>Remover Contato</strong></button>
+																	</div>
+																</div>
+															</td>
+															
+														</tr>
+
+													</tbody>
+												</table>
+
+											
+
+
+											</div>
+
+
+											<!-- Seção - PRE-ALERTA  -->
+											<div class="tab-pane" id="divDOCUMENTOS">
+												
+													<table tablename="TAB-PREALERTAS" id="TAB-PREALERTAS"  class="table table-hover" border="0" nodeletebutton="true" noaddbutton="true">
+														<thead>
+															<tr>
+																<div class="row">
+																	<div class="form-group col-md-12">
+																		<label class="info">Destinos <span class="required">*</span></label>
+																		<div class="input-group">
+																			<span class="input-group-addon">
+																				<i class="flaticon flaticon-flight icon-md"></i>
+																			</span>
+																			<input type="text" name="sda" id="AEROPORTO" class="form-control">
+																		</div>
+																		
+																	</div>
+																</div>
+	
+																<div class="row">
+																	<div class="form-group col-md-12">
+																		<label class="info">Lista de Emails <span class="required">*</span></label>
+																		<textarea rows="4" cols="50" name="aaa" id="NOFITY" class="form-control"></textarea>
+																	</div>
+															
+																</div>
+																<div class="row">
+																	<div class="form-group col-md-12">
+																		<button class="btn btn-success btn-sm" id="ADDITEM" name="ADDITEM" onclick="PREALERTAS(); exibeCampos(this);"><i class="flaticon flaticon-circle-plus icon-md"></i> Adicionar Pré Alertas</button>
+																	</div>
+																</div>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="row">
+																		<div class="form-group col-md-12">
+																			<label class="info">Destinos <span class="required">*</span></label>
+																			<div class="input-group">
+																				<span class="input-group-addon">
+																					<i class="flaticon flaticon-flight icon-md"></i>
+																				</span>
+																				<input type="text" name="PRE_ALERTA_ADD" id="PRE_ALERTA_ADD" class="form-control">
+																			</div>
+																		</div>	
+																	</div>
+																</td> 
+																
+																<td>
+																	<div class="row">
+																		<div class="form-group col-md-12">
+																			<button class="btn btn-success btn-sm" id="ADDITEM" name="ADDITEM" onclick="PREALERTASDelete(); exibeCampos(this);"><i class="flaticon flaticon-circle-plus icon-md"></i> Adicionar Pré Alertas</button>
+																		</div>
+																	</div>
+																</td>                    
+															</tr>
+														</tbody>
+													</table>
+											</div>
+											
+										</div>
+										
+									</div>
+								</div>															
+							</div>	
+						</div>
+					</div>
+					<script src="js/document.js"></script>
+					<script src="js/util.js"></script>
+					<script src="js/upload.js"></script>
+					<script src="js/component.js"></script>
+					<script src="js/zoom.js"></script>
+					<script src="js/beforeSendValidate.js"></script>					
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+ 

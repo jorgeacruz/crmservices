@@ -1,0 +1,318 @@
+<html>
+	<head>
+		<!-- =================================================================================================== -->
+		<!-- BIBLIOTECAS PADR�ES DO FLUIG -->
+		<!-- =================================================================================================== -->
+		<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+		<!-- =================================================================================================== -->
+		<!-- CSS DO FORMUL�RIO -->
+		<!-- =================================================================================================== -->
+		<link rel="stylesheet" href="./style/style.css">
+		<!-- =================================================================================================== -->
+		<!-- USAR CONSTRAINTS -->
+		<!-- =================================================================================================== -->
+		<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+		<!-- =================================================================================================== -->
+		<!-- BOOTSTRAP -->
+		<!-- =================================================================================================== -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- =================================================================================================== -->
+		<!-- SWEET ALERT 2 -->
+		<!-- =================================================================================================== -->
+		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<!-- =================================================================================================== -->
+		<!-- =========================================================================================================== -->
+		<!-- BIBLIOTECA DATA MOMENTS -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+		<!-- =========================================================================================================== -->
+	</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+	<div class="form-group col-md-12">
+		<div class="row">
+			<div class="form-group col-md-1"></div>
+			<div class="form-group col-md-10" id="PAINEL_CADATRO_FORNECEDOR">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="form-group col-md-2 col-md-2" style="text-align: left !important; top: 8px !important">
+								<img src="img/LogoFruit.png" title="Dados Pessoais" style="width: 200px;">		
+							</div>
+							<div class="form-group col-md-8" style="text-align: center !important; top: 24px !important">
+								<label class="secao2">&nbsp;&nbsp;&nbsp;CADASTRO DE CLAIM</label>
+							</div>
+						</div>									
+					</div>
+					<div id="collapseOne" class="panel-collapse ">
+						<div class="panel-body">
+							<ul class="nav nav-tabs clearfix justify-content-center" role="tablist">
+								<li class="active">
+									<a href="#LANCAMENTOS_CLAIM" role="tab" data-toggle="tab" id="ABA_DADOS">
+										<img src="img/user.svg" title="Dados Produtor" style="width: 38px;">&nbsp;Lançamento
+									</a>
+								</li>
+								<li >
+									<a href="#ANEXOS_CLAIM" role="tab" data-toggle="tab" id="ABA_PRODUTOS">
+										<img src="img/package.svg" title="Produtos" style="width: 38px;">&nbsp;Anexos
+									</a>
+								</li>
+
+
+
+								<!--
+								<li >
+									<a href="#divBANCO" role="tab" data-toggle="tab" id="ABA_BANCO">
+										<img src="img/cash.svg" title="Dados Banc�rios" style="width: 38px;">&nbsp;Contatos
+									</a>
+								</li>											
+								<li >
+									<a href="#divDOCUMENTOS" role="tab" data-toggle="tab" id="ABA_DOCUMENTOS">
+										<img src="img/folder.svg" title="Documentos" style="width: 38px;">&nbsp;Pré-Alerta
+									</a>
+								</li>
+								-->
+
+
+
+							</ul>
+							<div class="tab-content">
+								
+								<div class="tab-pane active" id="LANCAMENTOS_CLAIM">
+									<div class="row"> <!-- linha 1-->
+										
+										<div class="form-group col-md-3">
+											<label class="info">Invoice</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="INVOICE_CLAIM" name="INVOICE_CLAIMNUMERO_CLAIM" class="form-control block" type="text" mask="00000-000">
+											</div>
+										</div>	
+										<div class="form-group col-md-3">
+											<label class="info">Numero Claim</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="NUMERO_CLAIM" name="NUMERO_CLAIM" class="form-control block" type="text" mask="00000-000">
+											</div>
+										</div>	
+										<div class="form-group col-md-3">
+											<label class="info">Data</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="DATA_CLAIM" name="DATA_CLAIM" class="form-control block" type="text" mask="00000-000">
+											</div>
+										</div>	
+										<div class="form-group col-md-3">
+											<label class="info">Nota de Crédito</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="NOTA_CREDITO_CLAIM" name="NOTA_CREDITO_CLAIM" class="form-control block" type="text" mask="00000-000">
+											</div>
+										</div>	
+
+									</div>	
+									<div class="row">
+										<div class="form-group col-md-6">
+											<label class="info">Exportador</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="EXPORTADOR" name="EXPORTADOR" class="form-control block" type="text" readonly>
+											</div>
+										</div>	
+										<div class="form-group col-md-6">
+											<label class="info">Importador</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="IMPORTADOR" name="IMPORTADOR" class="form-control block" type="text" readonly >
+											</div>
+										</div>
+									</div>		
+									<div class="row">
+										<div class="form-group col-md-8">
+											<label class="info">Descrição</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="DESCRICAO_CLAIM" name="DESCRICAO_CLAIM" class="form-control block" type="text" >
+											</div>
+										</div>
+										<div class="form-group col-md-4">
+											<label class="info">Tipo de Claim</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="TIPO_CLAIM" name="TIPO_CLAIM" class="form-control block" type="text" >
+											</div>
+										</div>
+									</div>	
+									<div class="row">
+										<div class="form-group col-md-2">
+											<label class="info">Variedade</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="VARIEDADE_CLAIM" name="VARIEDADE_CLAIM" class="form-control block" type="text" >
+											</div>
+										</div>
+										<div class="form-group col-md-6">
+											<label class="info">AWB/BL</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="AWB_CLAIM" name="AWB_CLAIM" class="form-control block" type="text" >
+											</div>
+										</div>
+										<div class="form-group col-md-2">
+											<label class="info">ETD</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="ETD_CLAIM" name="ETD_CLAIM" class="form-control block" type="text" >
+											</div>
+										</div>
+										<div class="form-group col-md-2">
+											<label class="info">ETA</label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-pin icon-md"></i>
+												</span>
+												<input id="ETA_CLAIM" name="ETA_CLAIM" class="form-control block" type="text" >
+											</div>
+										</div>
+									</div>	
+									<div class="row">
+										<div class="form-group col-md-3">
+											<div class="input-group">
+												<label class="info">Status Claim</label>
+												<input type="text" name="STATUS_CLAIM" id="STATUS_CLAIM" class="form-control">
+											</div>
+										</div>
+										<div class="form-group col-md-3">
+											<div class="input-group">
+												<label class="info">Amount</label>
+												<input type="text" name="AMOUNT_CLAIM" id="AMOUNT_CLAIM" class="form-control">
+											</div>
+										</div>
+										<div class="form-group col-md-3">
+											<div class="input-group">
+												<label class="info">%</label>
+												<input type="text" name="PERCENT_CLAIM" id="PERCENT_CLAIM" class="form-control" readonly>
+											</div>
+										</div>
+										<div class="form-group col-md-3">
+											<div class="input-group">
+												<label class="info">Total Invoice</label>
+												<input type="text" name="TOTAL_INVOICE" id="TOTAL_INVOICE" class="form-control" readonly>
+											</div>
+										</div>
+									</div>	
+								</div>
+
+								<!-- NOVA ABA - DESTINOS -->
+								<div class="tab-pane" id="ANEXOS_CLAIM">
+									
+									<div class="row">
+								
+
+										<table id="TABPASSAGEIROS" tablename="TABPASSAGEIROS" class="table table-hover" border="0" nodeletebutton="true" noaddbutton="true">
+											<thead>
+												<tr>
+											<!--
+													<th class="form-group col-md-6" style="background-color: white; text-align: center;">
+														<label class="info2" style="margin-top: 10px;"><strong>Excluir</strong></label>
+													</th>
+													<th class="form-group col-md-2" style="background-color: white; text-align: center;">
+														<label class="info2" style="margin-top: 10px;"><strong>Manual</strong></label>
+													</th>
+													<th class="form-group col-md-2" style="background-color: white; text-align: center;">
+														<label class="info2" style="margin-top: 10px;"><strong>Nome do passageiro</strong></label>
+													</th>
+													<th class="form-group col-md-2" style="background-color: white; text-align: center;">
+														<label class="info2" style="margin-top: 10px;"><strong>CPF</strong></label>
+													</th>
+									-->	
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr style="border: hidden !important">
+												
+													<td>
+														<div class="form-group col-md-12" style="display: auto;">
+															<div class="input-group">
+																<input id="ANEXAR_ARQUIVO" name="ANEXAR_ARQUIVO" class="form-control inline" type="file">
+																<span class="input-group-addon">
+																	<i class="fluigicon fluigicon-file-upload icon-md"></i>
+																</span>
+															</div>														
+														</div>
+													</td>
+											
+												</tr>
+
+												<tr>
+													<td>
+														<span>Adicionar Anexo</span>
+													</td>
+													<td>
+														<button class="btn btn-info esconder" id="ADDITEM" name="ADDITEM" onclick="childAdd(); exibeCampos(this);"><strong><i class="fluigicon fluigicon-plus icon-sm"></i></strong></button>
+													</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												
+											</tfoot>
+										</table>
+													
+									</div>	
+									
+
+								</div>
+							</div>
+							
+						</div>
+					</div>															
+				</div>	
+			</div>
+		</div>
+		<script src="js/document.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/upload.js"></script>
+		<script src="js/component.js"></script>
+		<script src="js/zoom.js"></script>
+		<script src="js/beforeSendValidate.js"></script>					
+	</div>
+</form>
+</div>
+	<script src="./js/document.js"></script>
+	<script src="./js/util.js"></script>
+	<script src="./js/upload.js"></script>
+	<script src="./js/component.js"></script>
+	<script src="./js/zoom.js"></script>
+	<script src="./js/beforeSendValidate.js"></script>
+</body>
+</html>

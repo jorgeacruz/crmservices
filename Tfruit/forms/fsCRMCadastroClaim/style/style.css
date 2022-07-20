@@ -1,0 +1,118 @@
+@media (min-width:1000px) {
+  	/*  DENTRO DA TABELA LIMITAR A QUANTIDADE DE CARACTERES DO ZOOM */
+  	.select2-selection__choice {
+    	max-width: 25ch !important;
+    	overflow: hidden !important;
+    	white-space: nowrap !important;
+  	} 
+
+  	/* DENTRO DA TABELA IMPEDIR QUE O ZOOM CONTINUE EXPANDINDO */
+  	.select2-search, .select2-search--inline {
+		width: 0% !important;
+	}
+}
+
+@media (min-width:1300px) {
+  	/*  DENTRO DA TABELA LIMITAR A QUANTIDADE DE CARACTERES DO ZOOM */
+  	.select2-selection__choice {
+    	max-width: 40ch !important;
+    	overflow: hidden !important;
+    	white-space: nowrap !important;
+  	} 
+
+  	/* DENTRO DA TABELA IMPEDIR QUE O ZOOM CONTINUE EXPANDINDO */
+  	.select2-search, .select2-search--inline {
+		width: 0% !important;
+	}
+}
+
+/* ADIÃ‡ÃƒO DO BACKGROUND-IMAGE PARA O FORMULÃ�RIO */
+body {
+	background-image: url("Tfruit_bg_01.jpg") !important;
+   	background-size: cover !important;
+  	background-repeat: no-repeat !important;
+  	/* background-attachment: fixed; */
+  	font-family: 'Lato', sans-serif !important;
+}
+
+/* CLASSE PADRÃƒO PARA LABEL */
+.info{
+	font-size: 14px;
+	font-weight: bold !important;
+	color: #666666 !important;
+	text-align: left !important;
+	vertical-align: baseline !important;
+	font-family: 'Lato', sans-serif !important; 
+}
+
+/* CLASSE ATRIBUÃ�DA AO CABEÃ‡ALHO DO PAINEL */
+.panel-heading {
+	background-color: #f5f5f5 !important;
+	font-weight: bold !important;
+	font-size: x-large !important;
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+}
+.panel-default {
+	background-color: #f5f5f5;
+}
+
+/* CLASSE ATRIBUÃ�DA AO CORPO DO PAINEL */
+.panel-body{
+	background-color: #f5f5f5 !important;
+	/* border-style: solid;
+	border-width: 1px;
+	border-color: #E06437;
+	 */
+}
+
+/* CLASSE QUE DOMINUI O TAMANHO DO Ã�CONE DO FLUIG PARA FICAR COMPATÃ�VEL COM A FONTE UTILIZADA */
+.fluig-style-guide .fluigicon-md, .fluig-style-guide .icon-md{
+	font-size: 19px !important;
+}
+
+.secao2{
+    color: #E06437;
+    background-color: #f5f5f5 !important;
+    font-size: 21px !important;
+    font-family: 'Lato', sans-serif;
+}
+.h3_tfruit{
+    color: #E06437 !important;
+    font-size: 17px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* NO CAMPO ZOOM OCULTA "FILTAR COLUNAS"  */
+li.header-results {
+	display: none !important;
+}
+
+/* CLASSE INPUT GROUP */
+span.input-group-addon{
+	background-color: #E06437 !important;
+	color: #f5f5f5 !important;
+}
+
+/* CLASSE DO CAMPO ZOOM */
+.input-group-addon.select2-fluigicon-zoom{
+	background-color: #E06437 !important;
+	color: #f5f5f5 !important;
+}
+
+hr{
+	border-color: #E06437 !important ;
+	box-sizing: border-box;
+	width: 100%;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + -2px) !important;
+}
+#PAINEL_CADATRO_FORNECEDOR {
+	margin-top: 46px !important;
+}
+
+.nav-tabs>li.active>a {
+	border-color: #E06437!important;
+}
