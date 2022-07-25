@@ -623,3 +623,97 @@ function excluiDocumento(oElement){
 
 	return false;
 };
+
+  
+// EXCLUIR DOCUMENTOS
+function del(obj){
+	
+	var seqDell = $(obj).attr("id").split("___")[1];
+	
+	var a = $("#ID_DOCUMENTO___" + seqDell).val();
+
+	deleteDocument(a,1000);
+
+	ajustaBtn(seqDell,"0");		
+		
+};
+
+function deleteDocument(idDoc) {
+	
+	$.ajax({
+		async : false,
+		type : "POST",
+		contentType : "application/json",
+		url : '/api/public/ecm/document/remove',
+		data : JSON.stringify({
+			"id" : idDoc,
+		}),
+		error : function(e) {
+			
+			var attachments = parent.WKFViewAttachment.attachmentsDocs;
+			var aindaEstaAnexo = false;
+			
+			if (aindaEstaAnexo == false) {
+				
+			}
+
+		},
+		success : function(data) {
+			statusGED("0");								
+		},		
+	});		
+};
+
+function ajustaBtn(seq, stat){
+	
+	if( stat == "1"){//ANEXANDO
+		$("#VIEWDOC___" + seq).fadeIn(180);
+		$("#DELDOC___" + seq).fadeIn(180);
+		$("#ANEXADO___" + seq).val("S");
+		
+	};
+	if( stat == "0"){//EXCLUIDO
+		
+		$("#LABELFORM___" + seq).val("");
+		$("#VIEWDOC___" + seq).hide();
+		$("#DELDOC___" + seq).hide();
+		$("#EMISSAO___" + seq).val("");
+		$("#VALIDADE___" + seq).val("");
+		$("#ANEXADO___" + seq).val("N");
+
+		uploadClick(seq);
+	};
+	
+};
+
+function statusGED (stat){
+	
+	var msg = "";
+
+	if(stat == "1"){//ANEXANDO
+		msg = "Anexado"
+	};
+	if(stat == "0"){//EXCLUINDO
+		msg = "Excluido"
+	};
+
+	const Toast = Swal.mixin({
+		toast: true,
+		position: 'center',
+		showConfirmButton: false,
+		timer: 2000,
+		timerProgressBar: true,
+		didOpen: (toast) => {
+			// toast.addEventListener('mouseenter', Swal.stopTimer)
+			toast.addEventListener('mouseleave', Swal.resumeTimer)
+		}
+	});	  
+	Toast.fire({
+		icon: 'success',
+		title: 'Documento ' + msg + ' com Sucesso!'
+	});
+};
+
+
+
+

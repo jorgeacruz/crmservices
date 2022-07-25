@@ -1,5 +1,7 @@
+
+
 var beforeSendValidate = function(numState,nextState){
-    
+  
     var atv = $("#ATIVIDADE").val();  	//ATIVIDADE ATUAL
         
     if(  atv == 0 || atv == 4 ){
@@ -7,7 +9,7 @@ var beforeSendValidate = function(numState,nextState){
         var vazio = false;
         var msg = "";
 
-        var cnpj = $("#CNPJ").val();
+        var nif = $("#NIF").val();
         var razao = $("#RAZAO").val();
         var fantasia = $("#FANTASIA").val();
         var cep = $("#CEP").val();
@@ -20,6 +22,7 @@ var beforeSendValidate = function(numState,nextState){
         var contato = $("#NOME_CONTATO").val();
         var email = $("#EMAIL").val();
         var tel1 = $("#TELEFONE1").val();
+      /*
         var tel2 = $("#TELEFONE2").val();
         var forma = $("#FORMA_CONTATO").val();
         var modoPgt = $("#modoPagamento").val();
@@ -31,9 +34,9 @@ var beforeSendValidate = function(numState,nextState){
         var bancoDolar = $("#DOLAR_TEXTAREA").val(); 
         var bancoEuro = $("#EURO_TEXTAREA").val();
         var rowCountDoc = $("#TABDOCUMENTOS > tbody").children().length -1;
-        
+        */
 
-        if (cnpj == "" || cnpj == null){
+        if (nif == "" || nif == null){
             vazio = true;
             msg = "CNPJ; ";
         };
@@ -85,7 +88,9 @@ var beforeSendValidate = function(numState,nextState){
             vazio = true;
             msg += "Telefone 1; ";
         };
-        if (tel2 == "" || tel2 == null){
+
+       /*
+       if (tel2 == "" || tel2 == null){
             vazio = true;
             msg += "Telefone 2; ";
         };
@@ -179,7 +184,7 @@ var beforeSendValidate = function(numState,nextState){
                 };           
             });
         };        
-
+*/
         if(vazio){
             
             Swal.fire({

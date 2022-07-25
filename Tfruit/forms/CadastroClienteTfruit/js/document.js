@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 	
 	var atv = $("#ATIVIDADE").val();
@@ -48,12 +49,12 @@ function DESTINOS(){ var row = wdkAddChild("TAB_DESTINOS"); return row; }
 function DESTINOSDelete(oElement){ fnWdkRemoveChild(oElement); }
 
 /* Tabela Pai - Filho (DADOS CONTATO) */
-function DADOSCONTATO(){ var row = wdkAddChild("TAB-DADOSCLIENTE"); return row; }
+function DADOSCONTATO(){ var row = wdkAddChild("TAB_DADOSCLIENTE"); return row; }
 function DADOSCONTATODelete(oElement){ fnWdkRemoveChild(oElement); }
 
 /* Tabela Pai - Filho (PRE ALERTAS) */
-function PREALERTAS(){ var row = wdkAddChild("TAB-PREALERTAS"); return row; }
-function PREALERTASDelete(oElement){ fnWdkRemoveChild(oElement); }
+function PREALERTAS(){ var row = wdkAddChild("TAB_PREALERTAS"); return row; }
+function ALERTASDelete(oElement){ fnWdkRemoveChild(oElement); }
 
 
 	

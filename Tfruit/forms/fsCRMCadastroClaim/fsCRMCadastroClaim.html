@@ -65,23 +65,6 @@
 									</a>
 								</li>
 
-
-
-								<!--
-								<li >
-									<a href="#divBANCO" role="tab" data-toggle="tab" id="ABA_BANCO">
-										<img src="img/cash.svg" title="Dados Banc�rios" style="width: 38px;">&nbsp;Contatos
-									</a>
-								</li>											
-								<li >
-									<a href="#divDOCUMENTOS" role="tab" data-toggle="tab" id="ABA_DOCUMENTOS">
-										<img src="img/folder.svg" title="Documentos" style="width: 38px;">&nbsp;Pré-Alerta
-									</a>
-								</li>
-								-->
-
-
-
 							</ul>
 							<div class="tab-content">
 								
@@ -89,144 +72,201 @@
 									<div class="row"> <!-- linha 1-->
 										
 										<div class="form-group col-md-3">
-											<label class="info">Invoice</label>
+											<label class="info">Invoice <span class="required">*</span></label>
 											<div class="input-group">
-												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
-												</span>
-												<input id="INVOICE_CLAIM" name="INVOICE_CLAIMNUMERO_CLAIM" class="form-control block" type="text" mask="00000-000">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="flaticon flaticon-format-list-numbered icon-md"></i>
+													</span>
+													<input id="INVOICE_CLAIM" name="INVOICE_CLAIM" class="form-control block" type="text">
+												</div>
 											</div>
 										</div>	
 										<div class="form-group col-md-3">
-											<label class="info">Numero Claim</label>
+											<label class="info">Data <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-calendar icon-md"></i>	
 												</span>
-												<input id="NUMERO_CLAIM" name="NUMERO_CLAIM" class="form-control block" type="text" mask="00000-000">
+												<input id="DATA_CLAIM" name="DATA_CLAIM" class="form-control block" type="text" >
 											</div>
 										</div>	
 										<div class="form-group col-md-3">
-											<label class="info">Data</label>
+											<label class="info">Nota de Crédito <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-monetization-on icon-md"></i>
 												</span>
-												<input id="DATA_CLAIM" name="DATA_CLAIM" class="form-control block" type="text" mask="00000-000">
+												<select name="NOTACREDITO" id="NOTACREDITO" class="form-control">
+													<option value="" selected>Selecione Nota de Crédito</option>
+													<option value="Emitida">Emitida</option>
+													<option value="Pendente">Pendente</option>
+												</select>
 											</div>
+											
 										</div>	
 										<div class="form-group col-md-3">
-											<label class="info">Nota de Crédito</label>
+											<label class="info">Status Claim <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-format-list-numbered icon-md"></i>
 												</span>
-												<input id="NOTA_CREDITO_CLAIM" name="NOTA_CREDITO_CLAIM" class="form-control block" type="text" mask="00000-000">
+												<select name="STATUS" id="STATUS" class="form-control">
+													<option value="" selected>Selecione Status da Claim</option>
+													<option value="Finalizada">Finalizada</option>
+													<option value="Em negociação">Em negociação</option>
+												
+												</select>
 											</div>
 										</div>	
 
 									</div>	
 									<div class="row">
-										<div class="form-group col-md-6">
-											<label class="info">Exportador</label>
+										<div class="form-group col-md-3">
+											<label class="info">Semana <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-calendar icon-md"></i>	
 												</span>
-												<input id="EXPORTADOR" name="EXPORTADOR" class="form-control block" type="text" readonly>
-											</div>
-										</div>	
-										<div class="form-group col-md-6">
-											<label class="info">Importador</label>
-											<div class="input-group">
-												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
-												</span>
-												<input id="IMPORTADOR" name="IMPORTADOR" class="form-control block" type="text" readonly >
+											<input class="form-control" name="SEMAMA" id="SEMANA" type="number">
 											</div>
 										</div>
-									</div>		
-									<div class="row">
-										<div class="form-group col-md-8">
-											<label class="info">Descrição</label>
+										<div class="form-group col-md-6">
+											<label class="info">AWB/B <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-calendar icon-md"></i>	
+												</span>
+											<input class="form-control" name="AWB" id="AWB" type="text">
+											</div>
+										</div>
+										<div class="form-group col-md-3">
+											<label class="info">PO <span class="required">*</span></label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-calendar icon-md"></i>	
+												</span>
+											<input class="form-control" name="PO" id="PO" type="text">
+											</div>
+										</div>
+										
+									</div>	
+									<div class="row">
+										<div class="form-group col-md-6">
+												<label class="info">Exportador <span class="required">*</span></label>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="flaticon flaticon-import-export icon-md"></i>	
+													</span>
+													<input id="EXPORTADOR" name="EXPORTADOR" class="form-control block" type="text" readonly>
+												</div>
+											</div>	
+											<div class="form-group col-md-6">
+												<label class="info">Importador <span class="required">*</span></label>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="flaticon flaticon-import-export icon-md"></i>	
+													</span>
+													<input id="IMPORTADOR" name="IMPORTADOR" class="form-control block" type="text" readonly >
+												</div>
+											</div>
+										
+									</div>	
+									<div class="row">
+										<div class="form-group col-md-8">
+											<label class="info">Descrição <span class="required">*</span></label>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-description icon-md"></i>	
 												</span>
 												<input id="DESCRICAO_CLAIM" name="DESCRICAO_CLAIM" class="form-control block" type="text" >
 											</div>
 										</div>
 										<div class="form-group col-md-4">
-											<label class="info">Tipo de Claim</label>
+											<label class="info">Tipo de Claim <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-description icon-md"></i>	
 												</span>
-												<input id="TIPO_CLAIM" name="TIPO_CLAIM" class="form-control block" type="text" >
+												<select name="TIPOCLAIM" id="TIPOCLAIM" class="form-control">
+													<option value="" selected>Selecione tipo Claim</option>
+													<option value="Qualidade" >Qualidade</option>
+													<option value="Cia Aérea/Maritíma" >Cia Aérea/Maritíma</option>
+													<option value="Transp. Rodov. Produtor" >Transp. Rodov. Produtor</option>
+													<option value="Transp. Rodov. Cliente" >Transp. Rodov. Cliente</option>
+												</select>
+												
 											</div>
 										</div>
 									</div>	
 									<div class="row">
-										<div class="form-group col-md-2">
-											<label class="info">Variedade</label>
+										<div class="form-group col-md-6">
+											<label class="info">Variedade <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-description icon-md"></i>	
 												</span>
 												<input id="VARIEDADE_CLAIM" name="VARIEDADE_CLAIM" class="form-control block" type="text" >
 											</div>
 										</div>
-										<div class="form-group col-md-6">
-											<label class="info">AWB/BL</label>
+										
+										<div class="form-group col-md-3">
+											<label class="info">ETD <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-flight-takeoff icon-md"></i>	
 												</span>
-												<input id="AWB_CLAIM" name="AWB_CLAIM" class="form-control block" type="text" >
+												<input id="ETD" name="ETD" class="form-control block" type="text" >
 											</div>
 										</div>
-										<div class="form-group col-md-2">
-											<label class="info">ETD</label>
+										<div class="form-group col-md-3">
+											<label class="info">ETA <span class="required">*</span></label>
 											<div class="input-group">
 												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
+													<i class="flaticon flaticon-flight-land icon-md"></i>	
 												</span>
-												<input id="ETD_CLAIM" name="ETD_CLAIM" class="form-control block" type="text" >
-											</div>
-										</div>
-										<div class="form-group col-md-2">
-											<label class="info">ETA</label>
-											<div class="input-group">
-												<span class="input-group-addon">
-													<i class="flaticon flaticon-pin icon-md"></i>
-												</span>
-												<input id="ETA_CLAIM" name="ETA_CLAIM" class="form-control block" type="text" >
+												<input id="ETA" name="ETA" class="form-control block" type="text" >
 											</div>
 										</div>
 									</div>	
 									<div class="row">
 										<div class="form-group col-md-3">
+											<label class="info">Total Invoice</label>
 											<div class="input-group">
-												<label class="info">Status Claim</label>
-												<input type="text" name="STATUS_CLAIM" id="STATUS_CLAIM" class="form-control">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-monetization-on icon-md"></i>	
+												</span>
+												<input type="text" name="TOTAL_INVOICE" id="TOTAL_INVOICE" class="form-control" readonly>
 											</div>
 										</div>
 										<div class="form-group col-md-3">
+											<label class="info">Valor Claim <span class="required">*</span></label>
 											<div class="input-group">
-												<label class="info">Amount</label>
-												<input type="text" name="AMOUNT_CLAIM" id="AMOUNT_CLAIM" class="form-control">
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-monetization-on icon-md"></i>	
+												</span>
+												<input type="text" name="VALOR_CLAIM" id="VALOR_CLAIM" class="form-control">
 											</div>
 										</div>
 										<div class="form-group col-md-3">
 											<div class="input-group">
 												<label class="info">%</label>
-												<input type="text" name="PERCENT_CLAIM" id="PERCENT_CLAIM" class="form-control" readonly>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="flaticon flaticon-monetization-on icon-md"></i>	
+													</span>
+													<input type="text" name="PERCENT_CLAIM" id="PERCENT_CLAIM" class="form-control" readonly>
+
+												</div>
 											</div>
 										</div>
 										<div class="form-group col-md-3">
+											<label class="info">ID</label>
 											<div class="input-group">
-												<label class="info">Total Invoice</label>
-												<input type="text" name="TOTAL_INVOICE" id="TOTAL_INVOICE" class="form-control" readonly>
+												<span class="input-group-addon">
+													<i class="flaticon flaticon-monetization-on icon-md"></i>	
+												</span>
+												<input type="text" name="ID_CLAIM" id="ID_CLAIM" class="form-control" readonly>
 											</div>
 										</div>
 									</div>	
@@ -236,60 +276,115 @@
 								<div class="tab-pane" id="ANEXOS_CLAIM">
 									
 									<div class="row">
+										<div class="form-group col-md-12">																											
+											<table style="TABLE-LAYOUT: fixed;" class="table table-layout-fixed table-striped" tablename="TAB_DOCUMENTOS" id="TAB_DOCUMENTOS" nodeletebutton="true"  noaddbutton="true">
+												<thead style="background-color: #E06437;">
+													<tr class="fs-overflow-y-auto fs-overflow-x-auto" style="display: auto;">
+														<th style="width: 100%; vertical-align: middle; text-align: center; padding-top:5px; padding-bottom: 5px;">
+															<label class="info" style="margin-top: 10px; color: #f5f5f5 !important;"><strong>Documentos Produtor</strong></label>
+														</th>
+													</tr>
+												</thead>
+												<tbody style="margin-top: 100px;">
+													<tr id="row_TAB_DOCUMENTOS">																		
+														<td style="vertical-align: middle; text-align: center; padding-top:5px; padding-bottom: 5px;">
+															<div style="display: flex; flex-direction: row !important; justify-content: center !important;">
+																<div style="width: 22% !important; display: auto;">
+																	<input
+																		type="zoom"
+																		id = "DOC_ZOOM"
+																		name="DOC_ZOOM"
+																		data-zoom="{
+																		'displayKey':'DOCUMENTO',
+																		'datasetId':'dsTF00002',
+																		'placeholder':'Documento',
+																		'maximumSelectionLength':'1',
+																		'fields':[
+																		{
+																			'field':'DOCUMENTO',
+																			'label':'Documento',
+																			'standard':'true'
+																		}
+																		]
+																		}"
+																	/>
+																	<input id="NOME_DOCUMENTO_TXT" name="NOME_DOCUMENTO_TXT" type="hidden">																				
+																	<input type="file"
+																		id="DOCUMENTO"
+																		name="DOCUMENTO"
+																		data-url="/ecm/upload"
+																		class="btn btn-default btn-md"
+																		style="display:none;"
+																		accept=".pdf"
+																		onclick="upload(this);"
+																	/>
+																	<input id="ANEXADO" name="ANEXADO" value="N" type="hidden">
+																	<input id="ID_DOCUMENTO" name="ID_DOCUMENTO" type="hidden">
+																</div>
+																&nbsp;
+																<a id="NOVO" name="NOVO" style="width: 4%;" href="https://tradeconnexcomercial132767.fluig.cloudtotvs.com.br:2400/portal/p/1/pageworkflowview?processID=TF00002" target="_blank">
+																	<i class="flaticon flaticon-square-plus icon-lg" style="color: #77B969;" data-toggle="tooltip" data-placement="top" title="Cadastrar Novo Documento"></i>
+																</a>
+																&nbsp;
+																<input id="LABELFORM"
+																	name="LABELFORM"
+																	class="form-control"
+																	type="text"
+																	onmouseover="mouse(this);"
+																	style="width: 15%;"
+																	readonly
+																/>
+																&nbsp;
+																<i id="VIEWDOC" name="VIEWDOC" role="button" class="flaticon flaticon-search icon-lg" style="color: #1eaad9; width: 4%; display: none; " onclick="view(this);" disabled></i>
+																&nbsp;
+																<i id="DELDOC" name="DELDOC" role="button" class="flaticon flaticon-trash icon-lg" style="color: #EB0045; width: 4%; display: none;" onclick="del(this);"	disabled></i>
+																<div style="width: 16%; padding-top: 3px" data-toggle="tooltip" data-placement="top" title="Monitorar Validade?">
+																	<label for="" class="info">Validade?</label>
+																	<input id="MONITORAR_VALIDADE"
+																		name="MONITORAR_VALIDADE"
+																		type="checkbox"
+																		data-size="mini"
+																		data-on-color="success"
+																		data-on-text="Sim"
+																		data-off-color="danger"
+																		data-off-text="Não"
+																		onchange="checkMonitorar(this);"
+																	/>
+																	<input id="MONITORAR_VALIDADE_TXT" name="MONITORAR_VALIDADE_TXT" type="hidden" >
+																</div>
+																&nbsp;
+																<div class="input-group" style="width: 15%;" data-toggle="tooltip" data-placement="top" title="Data Emissão">
+																	<input id="EMISSAO" name="EMISSAO" class="form-control block" type="text" placeholder="Emissão">
+																	<span class="input-group-addon">
+																		<i class="fluigicon fluigicon-calendar-verified icon-sm"></i>
+																	</span>													
+																</div>
+																&nbsp;
+																<div class="input-group" style="width: 15%;" data-toggle="tooltip" data-placement="top" title="Data Validade" >
+																	<input id="VALIDADE" name="VALIDADE" class="form-control block" type="text" placeholder="Validade">
+																	<span class="input-group-addon">
+																		<i class="fluigicon fluigicon-calendar-refresh icon-sm"></i>
+																	</span>													
+																</div>
+																&nbsp;&nbsp;&nbsp;
+																<div style="width: 5%;">																					
+																	<button class="btn btn-primary fluigicon fluigicon-trash fluigicon-sm" style="color: #f5f5f5; background-color: #EB0045;" id="BTNREMOVER_DOC" name="BTNREMOVER_DOC" onclick="excluiDocumento(this);"></button>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td style="vertical-align: middle; display: auto;">
+															<button id="ADDITEM" name="ADDITEM" class="btn btn-primary fluigicon fluigicon-plus fluigicon-sm" style="color: #f5f5f5; background-color: #E06437;" onclick="childAdd();"></button>
+														</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</div>
 								
-
-										<table id="TABPASSAGEIROS" tablename="TABPASSAGEIROS" class="table table-hover" border="0" nodeletebutton="true" noaddbutton="true">
-											<thead>
-												<tr>
-											<!--
-													<th class="form-group col-md-6" style="background-color: white; text-align: center;">
-														<label class="info2" style="margin-top: 10px;"><strong>Excluir</strong></label>
-													</th>
-													<th class="form-group col-md-2" style="background-color: white; text-align: center;">
-														<label class="info2" style="margin-top: 10px;"><strong>Manual</strong></label>
-													</th>
-													<th class="form-group col-md-2" style="background-color: white; text-align: center;">
-														<label class="info2" style="margin-top: 10px;"><strong>Nome do passageiro</strong></label>
-													</th>
-													<th class="form-group col-md-2" style="background-color: white; text-align: center;">
-														<label class="info2" style="margin-top: 10px;"><strong>CPF</strong></label>
-													</th>
-									-->	
-													
-												</tr>
-											</thead>
-											<tbody>
-												<tr style="border: hidden !important">
-												
-													<td>
-														<div class="form-group col-md-12" style="display: auto;">
-															<div class="input-group">
-																<input id="ANEXAR_ARQUIVO" name="ANEXAR_ARQUIVO" class="form-control inline" type="file">
-																<span class="input-group-addon">
-																	<i class="fluigicon fluigicon-file-upload icon-md"></i>
-																</span>
-															</div>														
-														</div>
-													</td>
-											
-												</tr>
-
-												<tr>
-													<td>
-														<span>Adicionar Anexo</span>
-													</td>
-													<td>
-														<button class="btn btn-info esconder" id="ADDITEM" name="ADDITEM" onclick="childAdd(); exibeCampos(this);"><strong><i class="fluigicon fluigicon-plus icon-sm"></i></strong></button>
-													</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												
-											</tfoot>
-										</table>
-													
-									</div>	
-									
 
 								</div>
 							</div>
@@ -301,7 +396,6 @@
 		</div>
 		<script src="js/document.js"></script>
 		<script src="js/util.js"></script>
-		<script src="js/upload.js"></script>
 		<script src="js/component.js"></script>
 		<script src="js/zoom.js"></script>
 		<script src="js/beforeSendValidate.js"></script>					

@@ -116,3 +116,6 @@ select.form-control:not([size]):not([multiple]) {
 .nav-tabs>li.active>a {
 	border-color: #E06437!important;
 }
+.required {
+	color: #E06437;
+}

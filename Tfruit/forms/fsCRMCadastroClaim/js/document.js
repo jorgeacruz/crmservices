@@ -38,6 +38,8 @@ $(document).ready(function () {
         $("#modoPagamento").append('<option value="'+modoPagamento+'">'+modoPagamento+'</option>');
     };
 
+	
+
 						
 });
 
@@ -45,7 +47,7 @@ $(document).ready(function () {
 /* Inicio tabelas pai X filho */
 
 function childAdd(){
-	var row = wdkAddChild("TABPASSAGEIROS");
+	var row = wdkAddChild("TAB_DOCUMENTOS");
 	
 	return row;
 }
@@ -54,6 +56,11 @@ function fnCustomDelete(oElement){
 	fnWdkRemoveChild(oElement);
 }
 /* Fim tabelas pai X filho */
+
+
+var mySimpleCalendar = FLUIGC.calendar('#ETD');
+var mySimpleCalendar = FLUIGC.calendar('#ETA');
+
 
 
 	
